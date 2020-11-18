@@ -1,8 +1,20 @@
 [
-  {"_id": "123", "question": "What's your favorite color?", "quizId": "123"},
-  {"_id": "234", "question": "What's your favorite pet?", "quizId": "123"},
-  {"_id": "345", "question": "What's your favorite car?", "quizId": "123"},
-  {"_id": "456", "question": "What's your favorite flavor?", "quizId": "234"},
-  {"_id": "567", "question": "What's your favorite brand?", "quizId": "234"},
-  {"_id": "678", "question": "What's your favorite season?", "quizId": "345"}
+  {
+    "_id": "123",
+    "question": "What's your favorite color?",
+    "options": [
+      "Option 1",
+      "Option 2"
+    ],
+    "answer": "Option 1",
+    "type": "MULTIPLE_CHOICE",
+    "quizId": "123"
+  },
+  {
+    "_id": "234",
+    "question": "True?",
+    "type": "TRUE_FALSE",
+    "answer": "true",
+    "quizId": "123"
+  }
 ]

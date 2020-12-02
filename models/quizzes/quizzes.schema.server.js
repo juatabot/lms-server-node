@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const quizzesSchema = mongoose.Schema({
+    _id: String,
     title: String,
-    course: String,
+    courseId: String,
 }, { collection: 'quizzes' })
 module.exports = quizzesSchema

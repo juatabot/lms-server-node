@@ -6,4 +6,7 @@ module.exports = function (app) {
   app.get('/api/quizzes/:qzid', (req, res) =>
     quizzesService.findQuizById(req.params['qzid'])
       .then(quiz => res.json(quiz)))
+  app.get('/api/course/:cid/quizzes', (req, res) =>
+    quizzesService.findQuizzesForcourse(req.params['cid'])
+      .then(quizzes => res.json(quizzes)))
 }
